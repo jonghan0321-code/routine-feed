@@ -1,6 +1,35 @@
 {
-  "updated": null,
-  "today": null,
+  "updated": "2026-10-11",
+  "today": {
+    "date": "2026-10-11",
+    "title": "A/B tests for analysing LiveOps. Part 3",
+    "url": "https://www.gamedeveloper.com/design/a-b-tests-for-analysing-liveops-part-3",
+    "source": "Game Developer (Eugene Matveev) · 2020",
+    "summary": [
+      "테스트 도중 결과를 보고 유리할 때 멈추는 '조기 종료'는 흔한 실수이며, 정해진 표본이 다 찰 때까지 기다려야 한다.",
+      "통계적 유의성은 작은 표본의 결과가 더 큰 유저군에서도 유지될지에 대한 확신 정도이며, 빈도주의(p-value)와 베이지안(성공 확률) 두 접근이 있다.",
+      "전환·리텐션 같은 이항 지표는 t-test/z-test를 쓰지만, ARPU·ARPPU·LTV·세션 시간 같은 비이항 지표는 다른 분석 방법이 필요하다."
+    ],
+    "why": "넥슨 면접에서 이벤트·업데이트 효과를 A/B 테스트로 검증하는 과정을 설명할 때, 지표 유형별 검정 방법과 흔한 설계 실수를 근거로 답할 수 있다.",
+    "questions": [
+      {
+        "q": "새 이벤트가 매출을 올렸는지 A/B 테스트로 어떻게 검증하시겠어요?",
+        "tails": [
+          "ARPU 같은 금액 지표에는 t-test를 그대로 써도 되나요?",
+          "테스트 중간에 B안이 앞서면 멈춰도 될까요?",
+          "신규 유저와 기존 유저가 섞이면 어떤 문제가 생기나요?"
+        ]
+      },
+      {
+        "q": "A/B 테스트 결과를 해석할 때 흔히 하는 실수와 방지법은 무엇인가요?",
+        "tails": [
+          "여러 테스트가 동시에 겹치면 어떻게 하나요?",
+          "결과를 본 뒤 지표를 바꾸는 것이 왜 문제인가요?",
+          "빈도주의와 베이지안 중 어떤 방식을 택하시겠어요?"
+        ]
+      }
+    ]
+  },
   "history": [],
   "already_in_app": [
     "https://www.intelligencelabs.tech/310dadb5-6b2f-81fe-9493-f42d48f5c188",
